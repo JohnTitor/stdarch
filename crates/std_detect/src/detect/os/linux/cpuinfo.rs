@@ -186,17 +186,17 @@ power management:
         assert!(cpuinfo.field("Features").has("asimd"));
     }
 
-    const ARM_CORTEX_A57: &str = r"Processor	: Cortex A57 Processor rev 1 (aarch64)
-processor	: 0
-processor	: 1
-processor	: 2
-processor	: 3
-Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt
-CPU implementer	: 0x41
+    const ARM_CORTEX_A57: &str = r"Processor   : Cortex A57 Processor rev 1 (aarch64)
+processor   : 0
+processor   : 1
+processor   : 2
+processor   : 3
+Features    : fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt
+CPU implementer : 0x41
 CPU architecture: 8
-CPU variant	: 0x1
-CPU part	: 0xd07
-CPU revision	: 1";
+CPU variant : 0x1
+CPU part    : 0xd07
+CPU revision    : 1";
 
     #[test]
     fn arm_cortex_a57() {
